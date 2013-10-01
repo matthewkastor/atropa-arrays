@@ -1,6 +1,6 @@
 {
     "name": "atropa-arrays",
-    "version": "2013.09.29-238",
+    "version": "2013.09.30-2453",
     "description": "JavaScript utilities for handling arrays.",
     "main": "./src/atropa-arrays.js",
     "directories": {
