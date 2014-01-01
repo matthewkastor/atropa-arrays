@@ -41,7 +41,7 @@ var atropa = require('atropa-header');
  *  unless you installed this dependency manually.
  */
 atropa.inquire = require('atropa-inquire').inquire;
-/// <reference path="../../docs/vsdoc/OpenLayersAll.js"/>
+/// <reference path="../docs/vsdoc/OpenLayersAll.js"/>
 /*jslint
     indent: 4,
     maxerr: 50,
@@ -472,7 +472,7 @@ module.exports = atropa;
 },{"atropa-header":3,"atropa-inquire":4}],3:[function(require,module,exports){
 var atropa = {};
 
-/// <reference path="../../docs/vsdoc/OpenLayersAll.js"/>
+/// <reference path="../docs/vsdoc/OpenLayersAll.js"/>
 
 /*jslint
     indent: 4,
@@ -594,7 +594,7 @@ module.exports = atropa;
  * @namespace Container for all Glorious classes, functions, etc.
  */
 var atropa = require('atropa-header');
-/// <reference path="../../docs/vsdoc/OpenLayersAll.js"/>
+/// <reference path="../docs/vsdoc/OpenLayersAll.js"/>
 /*jslint
     indent: 4,
     maxerr: 50,
