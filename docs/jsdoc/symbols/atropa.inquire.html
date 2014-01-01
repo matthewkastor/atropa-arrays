@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - atropa</title>
+		<title>JsDoc Reference - atropa.inquire</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -208,24 +208,26 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Namespace atropa
+				Namespace atropa.inquire
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
 			<p class="description">
+				<br />Version
+					20120909.<br />
 				
 				
 			
-				Container for all Glorious classes, functions, etc.
+				Container for functions that test the state of inputs.
 				
 				
-					<br /><i>Defined in: </i> &lt;src/atropa-arrays.js&gt;.
+					<br /><i>Defined in: </i> &lt;node_modules/atropa-inquire/src/atropa-inquire.js&gt;.
 				
 			</p>
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class atropa.">
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class atropa.inquire.">
 				<caption>Namespace Summary</caption>
 				<thead>
 					<tr>
@@ -238,9 +240,9 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/atropa.html#constructor">atropa</a></b>
+								<b><a href="../symbols/atropa.inquire.html#constructor">atropa.inquire</a></b>
 							</div>
-							<div class="description">Container for all Glorious classes, functions, etc.</div>
+							<div class="description">Container for functions that test the state of inputs.</div>
 						</td>
 					</tr>
 				</tbody>
@@ -249,17 +251,12 @@ ul.inheritsList
 
 <!-- ============================== properties summary ===================== -->
 			
-				
-				
-				
-				
-			
 
 <!-- ============================== methods summary ======================== -->
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class atropa.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class atropa.inquire.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -272,19 +269,47 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">atropa.<b><a href="../symbols/atropa.html#.requires">requires</a></b>(className, requirementFn, errorMessage)
+								<div class="fixedFont">atropa.inquire.<b><a href="../symbols/atropa.inquire.html#.hasProperty">hasProperty</a></b>(obj, prop)
 								</div>
-								<div class="description">Pushes a requirement check into atropa.data.requirements.</div>
+								<div class="description">Checks an object for the existence of a property
+regardless of whether the property was inherited
+or not.</div>
 							</td>
 						</tr>
 					
 						<tr>
 							<td class="attributes">&lt;static&gt; &nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont">atropa.<b><a href="../symbols/atropa.html#.supportCheck">supportCheck</a></b>(className, errorMessage)
+								<div class="fixedFont">atropa.inquire.<b><a href="../symbols/atropa.inquire.html#.isEmptyString">isEmptyString</a></b>(str)
 								</div>
-								<div class="description">Checks whether this class has been marked as unsupported and throws an 
- error if it has.</div>
+								<div class="description">Checks whether the input is an empty string.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">atropa.inquire.<b><a href="../symbols/atropa.inquire.html#.isNull">isNull</a></b>(x)
+								</div>
+								<div class="description">Checks whether the input is null.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">atropa.inquire.<b><a href="../symbols/atropa.inquire.html#.isObject">isObject</a></b>(x)
+								</div>
+								<div class="description">Checks whether the input is an object.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">atropa.inquire.<b><a href="../symbols/atropa.inquire.html#.isObjectNotNull">isObjectNotNull</a></b>(x)
+								</div>
+								<div class="description">Checks whether the input is both an object and not null.</div>
 							</td>
 						</tr>
 					
@@ -305,12 +330,14 @@ ul.inheritsList
 				</div>
 				
 				<div class="fixedFont">
-						<b>atropa</b>
+						<b>atropa.inquire</b>
 				</div>
 				
 				<div class="description">
-					Container for all Glorious classes, functions, etc.
-					<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com"> Matthew Christopher Kastor-Inare III </a><br /> ☭ Hial Atropa!! ☭.
+					Container for functions that test the state of inputs.
+					<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
+ Matthew Christopher Kastor-Inare III </a><br />
+ ☭ Hial Atropa!! ☭.
 				</div>
 				
 				
@@ -322,6 +349,13 @@ ul.inheritsList
 					
 					
 					
+					
+						<dl class="detailList">
+						<dt class="heading">See:</dt>
+						
+							<dd><a href="../../../AtropaToolboxTests.html?spec=atropa.inquire">tests</a></dd>
+						
+						</dl>
 					
 
 			</div>
@@ -336,22 +370,17 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name=".requires"> </a>
+					<a name=".hasProperty"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					
-					<span class="light">atropa.</span><b>requires</b>(className, requirementFn, errorMessage)
+					<span class="light">{Boolean}</span>
+					<span class="light">atropa.inquire.</span><b>hasProperty</b>(obj, prop)
 					
 					</div>
 					<div class="description">
-						Pushes a requirement check into atropa.data.requirements. The test
- tests whether the class is supported in this environment. Sets
- atropa.data[className]'s support to unsupported and error to errorMessage
- if the requirementFn returns false. The requirement checks will all be run
- after the library has loaded.
-						
-							<br />
-							<i>Defined in: </i> &lt;node_modules/atropa-header/src/atropa-header.js&gt;.
+						Checks an object for the existence of a property
+regardless of whether the property was inherited
+or not.
 						
 						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
  Matthew Christopher Kastor-Inare III </a><br />
@@ -365,51 +394,47 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{String}</span> <b>className</b>
+									<span class="light fixedFont">{Object}</span> <b>obj</b>
 									
 								</dt>
-								<dd>The name of the class.</dd>
+								<dd>An object which may or may not
+have the property identified by prop.</dd>
 							
 								<dt>
-									<span class="light fixedFont">{Function}</span> <b>requirementFn</b>
+									<span class="light fixedFont">{String}</span> <b>prop</b>
 									
 								</dt>
-								<dd>A function to test whether or not the class
- is supported in this environment. If supported, returns true otherwise
- return false.</dd>
-							
-								<dt>
-									<span class="light fixedFont">{String}</span> <b>errorMessage</b>
-									
-								</dt>
-								<dd>The error message to use when this class or its
- methods are called in unsupported environments. Defaults to:
- 'The atropa.' + className + ' class is unsupported in this environment.';</dd>
+								<dd>A string value representing the
+name of the property.</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Boolean}</span> Returns true if obj.prop exists,
+otherwise returns false.</dd>
+							
+							</dl>
 						
 						
 						
 
 					<hr />
 				
-					<a name=".supportCheck"> </a>
+					<a name=".isEmptyString"> </a>
 					<div class="fixedFont">&lt;static&gt; 
 					
-					
-					<span class="light">atropa.</span><b>supportCheck</b>(className, errorMessage)
+					<span class="light">{Boolean}</span>
+					<span class="light">atropa.inquire.</span><b>isEmptyString</b>(str)
 					
 					</div>
 					<div class="description">
-						Checks whether this class has been marked as unsupported and throws an 
- error if it has.
-						
-							<br />
-							<i>Defined in: </i> &lt;node_modules/atropa-header/src/atropa-header.js&gt;.
+						Checks whether the input is an empty string.
 						
 						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
  Matthew Christopher Kastor-Inare III </a><br />
@@ -423,23 +448,161 @@ ul.inheritsList
 							<dt class="heading">Parameters:</dt>
 							
 								<dt>
-									<span class="light fixedFont">{String}</span> <b>className</b>
+									<span class="light fixedFont">{String}</span> <b>str</b>
 									
 								</dt>
-								<dd>The name of the class.</dd>
-							
-								<dt>
-									<span class="light fixedFont">{String}</span> <b>errorMessage</b>
-									
-								</dt>
-								<dd>Optional. A custom error message. Defaults to
- atropa.data[className].error</dd>
+								<dd>The string you want to know about</dd>
 							
 							</dl>
 						
 						
 						
 						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Boolean}</span> Returns true if str is an empty string,
+ otherwise returns false.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".isNull"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Boolean}</span>
+					<span class="light">atropa.inquire.</span><b>isNull</b>(x)
+					
+					</div>
+					<div class="description">
+						Checks whether the input is null.
+						
+						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
+ Matthew Christopher Kastor-Inare III </a><br />
+ ☭ Hial Atropa!! ☭.
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Mixed}</span> <b>x</b>
+									
+								</dt>
+								<dd>Any input that may or may not be null.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Boolean}</span> Returns true if x === null.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".isObject"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Boolean}</span>
+					<span class="light">atropa.inquire.</span><b>isObject</b>(x)
+					
+					</div>
+					<div class="description">
+						Checks whether the input is an object.
+						
+						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
+ Matthew Christopher Kastor-Inare III </a><br />
+ ☭ Hial Atropa!! ☭.
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Mixed}</span> <b>x</b>
+									
+								</dt>
+								<dd>Any input that may or may not be an object.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Boolean}</span> Returns true if typeof(x) === 'object'.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".isObjectNotNull"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Boolean}</span>
+					<span class="light">atropa.inquire.</span><b>isObjectNotNull</b>(x)
+					
+					</div>
+					<div class="description">
+						Checks whether the input is both an object and not null.
+						
+						<br /><i>Author: </i><a href="mailto:matthewkastor@gmail.com">
+ Matthew Christopher Kastor-Inare III </a><br />
+ ☭ Hial Atropa!! ☭.
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Mixed}</span> <b>x</b>
+									
+								</dt>
+								<dd>Any input that may or may not be both an
+object and null.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Boolean}</span> Returns true if x is both an object and
+not null. (null is an object).</dd>
+							
+							</dl>
 						
 						
 						
