@@ -20,7 +20,6 @@ atropa.inquire = require('atropa-inquire').inquire;
  *  ☭ Hial Atropa!! ☭
  * @version 20130221
  * @namespace Utilities for handling arrays.
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.arrays">tests</a>
  */
 atropa.arrays = {};
 /**
