@@ -85,7 +85,7 @@ atropa.arrays.match = function arraysMatch(array1, array2) {
  *  ☭ Hial Atropa!! ☭
  * @version 20130112
  * @param {Array} a (subtrahend) The array to subtract.
- * @param {Array} (minuend) fromB The array with elements duplicated in <code>a</code>
+ * @param {Array} fromB (minuend) The array with elements duplicated in <code>a</code>
  * @returns {Array} Returns a new array containing only the unique
  *  values found in <code>fromB</code> that are not present in <code>a</code>
  * @example
